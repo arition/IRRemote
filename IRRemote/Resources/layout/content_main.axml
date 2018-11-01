@@ -7,10 +7,60 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
-
+    <GridLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"    
+		android:orientation="horizontal"
+		android:layout_margin="20dp"
+        android:columnCount="6">
+		<Button
+			android:id="@+id/tv_open" 
+			android:layout_gravity="fill"
+		    android:text="Open / Close TV"        
+		    android:layout_columnSpan="6"
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/tv_change_input"
+			android:layout_gravity="fill"
+			android:text="Change TV Input"          
+		    android:layout_columnSpan="3"      
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/tv_enter"
+			android:layout_gravity="fill"
+			android:text="TV Enter"        
+		    android:layout_columnSpan="3"         
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/volume_up"
+			android:layout_gravity="fill"
+		    android:text="Volume Up"        
+		    android:layout_columnSpan="3"
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/volume_down"
+			android:layout_gravity="fill"
+		    android:text="Volume Down"        
+		    android:layout_columnSpan="3"
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/switch_1"
+			android:layout_gravity="fill"
+		    android:text="Switch 1"        
+		    android:layout_columnSpan="2"
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/switch_2"
+			android:layout_gravity="fill"
+		    android:text="Switch 2"        
+		    android:layout_columnSpan="2"
+		    android:layout_columnWeight="1"/>
+		<Button
+			android:id="@+id/switch_3"
+			android:layout_gravity="fill"
+		    android:text="Switch 3"        
+		    android:layout_columnSpan="2"
+		    android:layout_columnWeight="1"/>
+	</GridLayout>
+	
 </RelativeLayout>

@@ -1,0 +1,12 @@
+﻿FE50AF open tv
+FECA35 change tv input
+FE7887 TV Vol+
+FEFA05 TV Vol-
+
+1FE40BF HDMI Switch 1
+1FE20DF HDMI Switch 2
+1FE609F HDMI Switch 3
+
+FF827D Vol+
+FFA25D Vol-
+FF02FD Power

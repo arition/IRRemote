@@ -51,37 +51,6 @@ void sendIR(unsigned long code) {
     delay(40);
 }
 
-void sendInfo(String info) {
-    Serial.print(info);
-}
-
-void sendInfoln(String info) {
-    Serial.println(info);
-}
-
-String readInfo() {
-  return Serial.readStringUntil('\n');
-}
-
-int readInfoByte() {
-   return Serial.read();
-}
-
-void testPin(int pinId) {
-  digitalWrite(pinId, HIGH); 
-  delay(500);
-  digitalWrite(pinId, LOW); 
-  delay(500);
-}
-
-void testSocket() {
-  String info = readInfo();
-  if (info != "") {
-    sendInfoln(info);
-  }
-}
-
-
 void dump(decode_results *results) {
   // Dumps out the decode_results structure.
   // Call this after IRrecv::decode()

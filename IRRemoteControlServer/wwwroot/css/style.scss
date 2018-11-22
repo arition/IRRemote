@@ -1,0 +1,29 @@
+﻿body {
+    background-color: #FAFAFA;
+    touch-action: none;
+    user-select: none;
+}
+
+.button-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    @media all and (max-width: 575.98px) {
+        flex-flow: column nowrap;
+        justify-content: initial;
+    }
+    div {
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: {
+            top: 5px;
+            bottom: 5px;
+            left: 10px;
+            right: 10px;
+        }
+        background-color: #FEFEFE;
+        text-align: center;
+    }
+}
